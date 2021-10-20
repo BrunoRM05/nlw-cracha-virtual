@@ -1,0 +1,52 @@
+*{
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(39, 39, 39);
+}
+
+body{
+        background-image: url(/images/mask.png);
+        background-size: 20rem;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1,5rem;
+    color: white;
+}
+
+.perfil_git {
+    display: flex;
+    justify-content: center;
+}
+
+.perfil_git img {
+   height: 2rem;
+   padding-right: 0.5rem;
+   
+}
+
+.perfil_git a {
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+a, p{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+ul, li {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+}
