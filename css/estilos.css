@@ -1,52 +1,94 @@
 *{
     list-style: none;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
 }
 
 html, body {
+    --black: hsl(240, 6%, 13%);
+    --gray: hsl(240, 9%, 89%);
+
     height: 100%;
+
     display: grid;
     place-items: center;
-    background-color: rgb(39, 39, 39);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
-        background-image: url(/images/mask.png);
         background-size: 20rem;
         background-repeat: no-repeat;
         background-position: center;
 }
 
+main{
+color: var(--gray);
+
+    background-image: url(/images/background.svg);
+    width: 375px;
+    height: 812px;
+}
+
+.content {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+}
+
+.avatar span{
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+.avatar >img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    
+
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
 h1 {
-    display: flex;
-    justify-content: center;
+  
     font-size: 1,5rem;
-    color: white;
+    margin-top: 1.5rem;
 }
 
-.perfil_git {
+a{
+    color: var(--gray);
+    margin-top: 0.25rem;
+}
+
+.perfil_git{
     display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p{
+    margin-top: 2rem;
+}
+
+ul{
+    margin-top: 3rem;
+
+    display: flex;
+    gap: 0.5rem;
     justify-content: center;
 }
 
-.perfil_git img {
-   height: 2rem;
-   padding-right: 0.5rem;
-   
-}
 
-.perfil_git a {
-    font-size: 1.5rem;
-    padding-top: 0.3rem;
-    padding-left: 0.5rem;
-}
 
-a, p{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-ul, li {
-    display: flex;
-    padding: 0.5rem;
-    justify-content: center;
-}
