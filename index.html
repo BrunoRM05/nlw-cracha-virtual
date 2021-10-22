@@ -18,7 +18,7 @@
                 <img src="images/brunorm005.jpg" alt="Foto Pessoal">
             </div>
             
-    <h1>Bruno Miranda</h1>
+    <h1 id="userName">Bruno Miranda</h1>
     <div class="perfil_git">
     <img src="images/github 2.svg" alt="github">
     <a href="https://github.com/BrunoRM05"target="_blank">bruno.rm005</a>
@@ -27,22 +27,48 @@
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
-    <ul>
-        <li>
+    <ul id="socialLinks">
+        <li class="Youtube">
             <a href="https://www.youtube.com/" target="_blank"><img src="images/YT.svg" alt=""></a>
         </li>
-        <li>
+        <li class="Instagram">
             
             <a href="https://www.instagram.com/bruno_tiko/?hl=pt-br"target="_blank"><img src="images/insta.svg" alt=""></a>
         </li>
-        <li>
+        <li class="facebook">
             <a href="https://www.facebook.com/bruno.rodrigues.71653/" target="_blank"><img src="images/face.svg" alt=""></a>
         </li>
-        <li>
+        <li class="twitter">
             <a href="https://twitter.com/" target="_blank" ><img src="images/twitter.svg" alt=""></a>
         </li>
     </ul>
 </div>
 </main>
+
+<script>
+  
+        const linksSocialMedia = {
+
+            github: "BrunoRM05",
+            youtube: "Bruno Rodrigues de Miranda",
+            facebook: "Bruno Rodrigues",
+            instagram: "bruno_tiko"
+
+        }
+
+        function changeSocialMediaLinks() {
+            for (let li of socialLinks.children){
+                const social = li.getAttribute('class')
+
+                li.children[0].href = ` https://${social}.com/${linksSocialMedia[social]}`
+
+                alert(li.children[0].href)
+
+            }
+        }
+
+        changeSocialMedia()
+
+</script>
 </body>
 </html>
